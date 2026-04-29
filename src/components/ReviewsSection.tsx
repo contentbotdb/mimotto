@@ -17,6 +17,8 @@ type ReviewsSectionProps = {
     verifiedLabel: string;
     ctaLabel: string;
     ctaHref: string;
+    expandLabel: string;
+    collapseLabel: string;
     items: Review[];
   };
 };
@@ -192,11 +194,13 @@ export function ReviewsSection({ content }: ReviewsSectionProps) {
                           <button
                             type="button"
                             onClick={() => toggleReview(reviewKey)}
-                            className="mt-3 text-sm font-bold text-[#ffcc00] transition-colors hover:text-yellow-500"
-                          >
-                            {isExpanded ? "Ver menos" : "Ver más"}
-                          </button>
-                        )}
+                          className="mt-3 text-sm font-bold text-[#ffcc00] transition-colors hover:text-yellow-500"
+                        >
+                          {isExpanded
+                            ? content.collapseLabel
+                            : content.expandLabel}
+                        </button>
+                      )}
                       </div>
 
                       <div className="mt-auto flex items-center gap-3">

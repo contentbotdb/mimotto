@@ -594,6 +594,8 @@ const esContent = {
     ctaLabel: "Ver más reseñas",
     ctaHref:
       "https://www.google.com/maps/place/Mimotto/@6.2388779,-75.6010303,17z/data=!4m17!1m10!3m9!1s0x8e44294b141825fb:0x7a34ff0ad4edc780!2sMimotto!8m2!3d6.2389734!4d-75.601034!10e5!14m1!1BCgIgAQ!16s%2Fg%2F11rclnppgb!3m5!1s0x8e44294b141825fb:0x7a34ff0ad4edc780!8m2!3d6.2389734!4d-75.601034!16s%2Fg%2F11rclnppgb!5m1!1e1!18m1!1e1?entry=ttu&g_ep=EgoyMDI2MDQyNi4wIKXMDSoASAFQAw%3D%3D",
+    expandLabel: "Ver más",
+    collapseLabel: "Ver menos",
     items: [
       {
         name: "William Wadley",
@@ -956,6 +958,8 @@ export const siteContent = {
       title: "What our clients say",
       verifiedLabel: "Verified Google reviews",
       ctaLabel: "See more reviews",
+      expandLabel: "Read more",
+      collapseLabel: "Show less",
       items: [
         {
           name: "William Wadley",
